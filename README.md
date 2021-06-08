@@ -14,7 +14,7 @@ In order to standardize the development environment for this exercise, we have s
 * docker https://docs.docker.com/get-started/
 * vscode https://code.visualstudio.com/?wt.mc_id=vscom_downloads
 
-After installing git-cli navigate to the "build_environment" folder and run the following command to build the jupyter notebook and mirth connect instance:  
+After installing git-cli navigate to the `/build_environment` folder and run the following command to build the jupyter notebook and mirth connect instance:  
 * ```docker-compose up```
 
 The Docker will provision 2 containers with the main exercise components:
@@ -41,7 +41,7 @@ The [NPPES NPI Registry](https://npiregistry.cms.hhs.gov/) is a free directory o
 
 The NPPES NPI Registry also maintains an [API](https://npiregistry.cms.hhs.gov/registry/help-api) in order to allow users to programmatically interface with the registry.
 
-For this technical exercise, we have provided a [flat file](https://github.com/scotttse-rhie/recruiting/blob/master/Healthcare%20Data%20Analyst/data/provider_npi_list.tsv) of provider NPIs pulled from Reliance claims records.  These claims are from providers that have ordered Lab results on their patients from commercial labs. The schema of the data in the flat file is:
+For this technical exercise, we have provided a [flat file](https://github.com/reliancehie/recruiting-hda/blob/main/data/provider_npi_list.tsv) of provider NPIs pulled from Reliance claims records.  These claims are from providers that have ordered Lab results on their patients from commercial labs. The schema of the data in the flat file is:
 
 *laboratory*: name of the lab that performed the result in the claim  
 *provider_npi*: unique NPI number of the provider  
