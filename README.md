@@ -50,8 +50,8 @@ For this technical exercise, we have provided a [flat file](https://github.com/r
 We would like you to utilize the flat file dataset and the NPPES API to answer the following questions:
 
 1) How many claims are there for each lab?
-2) Who are the top 25 ordering providers (by NPI number and name)?
-3) Of these top 25 providers, what are their addresses?
+2) Who are the top 100 ordering providers (by NPI number and name)?
+3) Of these top 100 providers, what are their addresses?
 
 **NOTE: Please note any data issues you find and explain how you resolve them. 
 We suggest programmatically querying the NPPES API and not downloading the bulk csv.**
@@ -60,7 +60,7 @@ Please write up your approach in a Python 3.x Jupyter Notebook provisioned by (1
 
 ### BONUS: MIRTH Connect  
 
-Healthcare entities such as hospitals and laboratories that need to exchange clinical data often do so through clinical interface engines such as MIRTH Connect. For this part of the exercise, we would like you to generate a summary csv from the data wrangling exercise and utilize MIRTH Connect to create a Mirth channel. The description of the csv file is as follows: after answering question 3 in Part 1 above (Of these top 25 providers, what are their addresses?), we would like you to create a csv of the top 100 providers with the following fields in this order: 'provider npi', 'provider_last_name', 'provider_first_name', 'provider_address', 'number of claims'  
+Healthcare entities such as hospitals and laboratories that need to exchange clinical data often do so through clinical interface engines such as MIRTH Connect. For this part of the exercise, we would like you to generate a summary csv from the data wrangling exercise and utilize MIRTH Connect to create a Mirth channel. The description of the csv file is as follows: after answering question 3 in Part 1 above (Of these top 100 providers, what are their addresses?), we would like you to create a csv of the top 100 providers with the following fields in this order: 'provider npi', 'provider_last_name', 'provider_first_name', 'provider_location_address', 'number of claims'. Note that we are asking for location address and not mailing address. 
 
 We would like you to generated MIRTH Connect Channel that *can accomplish* the following tasks:
 
