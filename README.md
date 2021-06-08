@@ -70,7 +70,7 @@ We would like you to generated MIRTH Connect Channel that *can accomplish* the f
 *note that we are not asking you to actually create the DB itself and write the rows to a table but we will award bonus points if you do so. However, we want to be clear that this step is absolutely optional. Our main interest here is understanding your thought process for setting up the channel*
 
 ### Setting up Mirth: 
-* Since we have previously created our mirth instance open Docker UI and open "buildenvironment_mc_1" "OPEN IN BROWSER"
+* Open Docker UI and locate "buildenvironment_mc_1". Select "OPEN IN BROWSER"
 * select "Launch Mirth Connect Administrator" to download the jnlp file mirth needs to launch.   
 ![Download JNLP file](img/mirth_jnlp.jpg)
 * you will be prompted to keep or discard this file select "Keep" and open jnlp file:   
