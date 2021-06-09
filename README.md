@@ -56,7 +56,7 @@ We would like you to utilize the flat file dataset and the NPPES API to answer t
 **NOTE: Please note any data issues you find and explain how you resolve them. 
 We suggest programmatically querying the NPPES API and not downloading the bulk csv.**
 
-Please write up your approach in a Python 3.x Jupyter Notebook provisioned by (1-2 pages) and utilize the Pandas and/or Numpy libraries. You are also welcome and encouraged to use other python libraries that support your analysis. Please explain your work!
+Please write up your approach in a Python 3.x Jupyter Notebook provisioned in Docker (1-2 pages) and utilize the Pandas and/or Numpy libraries. You are also welcome and encouraged to use other python libraries that support your analysis. Please explain your work!
 
 ### BONUS: MIRTH Connect  
 
