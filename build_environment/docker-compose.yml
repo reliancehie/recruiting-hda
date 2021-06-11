@@ -16,10 +16,28 @@ services:
     ports:
       - 8080:8080/tcp
       - 8443:8443/tcp
+    depends_on:
+      - db
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password
+      - MYSQL_DATABASE=mirthdb
+      - MYSQL_ROOT_HOST=%
+    expose:
+      - 3306
   notebook:
     image: jupyter/scipy-notebook
+    user: root
+    environment:
+      NB_USER: docker_worker
+      NB_UID: 1008
+      NB_GID: 1011
+      CHOWN_HOME: 'yes'
+      CHOWN_HOME_OPTS: -R
     volumes:
-      - ./notebook:/home/jovyan
+      - ./notebook:/home/docker_worker/work
     ports:
       - 8888:8888
     container_name: notebook-container
